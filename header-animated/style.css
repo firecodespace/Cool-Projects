@@ -1,0 +1,91 @@
+*{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content{
+    max-width: 900px;
+    margin: auto;
+}
+
+.type-one{
+    margin-top: 50px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+.type-one h2{
+    margin-left: 25px;
+    background-color: white;
+}
+
+.typ-one-p{
+    background-color: white;
+    color: black;
+}
+
+.chip-container-one{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1.5px solid black;
+    border-radius: 16px;
+    margin: 3px;
+    font-size: 14px;
+}
+
+.chip:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.chip .close {
+    float: right;
+    cursor: pointer;
+}
+
+/* Chip type #2 */
+
+.type-two h2, p{
+    margin-left: 25px;
+    background-color: #323232;
+    color: white;
+}
+
+.type-two{
+    margin-top: 50px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background-color: #323232;
+}
+
+.chip-container-two{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: #323232;
+}
+
+.chip-two{
+    display: inline-block;
+    padding: 8px 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1.5px solid #444;
+    background: #323232;
+    box-shadow: 0px 0px 15px 0px rgb(40 40 40 / 20%);
+    margin: 3px;
+    font-size: 14px;
+    transition: 200ms;
+}
+
+.chip-two:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.back_image_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.over_boxes {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 350px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.269);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    border: 2px solid white;
+}
+
+.inb_text{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px;
+}
+
+.input-box-1 input{
+    position: absolute;
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    font-family: 'Roboto';
+    border-radius: 50px;
+    border: none;
+    padding-inline: 15px;
+}
+
+
+.input-box-2 input{
+    position: absolute;
+    margin: 10px 0;
+    height: 40px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    font-family: 'Roboto';
+    border-radius: 50px;
+    border: none;
+    padding-inline: 15px;
+}
+
+
+.btn_main{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    background-color: rgba(52, 133, 255, 1);
+    padding: 15px 100px;
+    border-radius: 50px;
+    font-family: 'Roboto';
+    color: white;
+    border: none; /* Remove border for button element */
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-decoration: none;
+
+}
+
+.btn_main:hover{
+    background-color: rgb(14, 67, 147);
+}
+
+.check-and-forgot {
+    display: flex;
+    justify-content: space-between; /* Distribute the elements horizontally */
+    align-items: center;
+    font-family: 'Roboto';
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.remember-check input {
+    margin-left: 26px; /* Add spacing between the checkbox and text (adjust as needed) */
+}
+
+.forgot-text {
+    text-decoration: none;
+    color: white;
+    margin-right: 26px;
+}
+
+.forgot-text:hover {
+    text-decoration: underline;
+}
+
+
+/* For screens smaller than 768px (typical smartphones) */
+@media (max-width: 768px) {
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    .over_boxes {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 250px;
+        height: 350px;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.269);
+        padding: 20px;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+        border: 1.5px solid white;
+    }
+
+    .inb_text{
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Arial';
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .input-box-1 input{
+        position: absolute;
+        margin: 10px;
+        height: 35px;
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        font-family: 'Roboto';
+        border-radius: 50px;
+        border: none;
+        padding-inline: 15px;
+    }
+    
+    
+    .input-box-2 input{
+        position: absolute;
+        margin: 10px 0;
+        height: 35px;
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        font-family: 'Roboto';
+        border-radius: 50px;
+        border: none;
+        padding-inline: 15px;
+    }
+    .check-and-forgot {
+        display: flex;
+        justify-content: space-between; /* Distribute the elements horizontally */
+        align-items: center;
+        font-family: 'Roboto';
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+    }
+    
+    .remember-check input {
+        margin-left: 26px;
+    }
+
+    .remember-check label{
+        text-wrap: nowrap;
+    }
+    
+    .forgot-text {
+        text-decoration: none;
+        color: white;
+        margin-right: 26px;
+        text-wrap: nowrap;
+    }
+    
+    .forgot-text:hover {
+        text-decoration: underline;
+    }
+}
+
+/* For screens larger than 768px (typical tablets and desktops) */
+@media (min-width: 769px) {
+    .over_boxes {
+        width: 350px; /* Restore the original width for larger screens */
+    }
+
+    .input-box-1 input,
+    .input-box-2 input {
+        width: 300px; /* Restore the original input field width for larger screens */
+    }
+
+    .btn_main {
+        padding: 15px 100px; /* Restore the original button padding for larger screens */
+    }
+}

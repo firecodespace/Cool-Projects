@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+
+    <link rel="icon" type="image/x-icon" href="/images/1200px-Clock_simple_white.svg.png">
+    <title>Times and Clocks</title>
+</head>
+<body>
+    <div class="clock-container">
+        <div id="date" class="date"></div>
+        <div id="clock" class="clock"></div>
+    </div>
+    <div class="row-container">
+        <div class="timer-container">
+            <div class="timer-display" id="timerDisplay">00:00:00</div>
+            <ol class="flag-list" id="flagList"></ol>
+            <div class="timer-buttons">
+                <a onclick="startTimer()">Start</a>
+                <a onclick="pauseTimer()">Stop</a>
+                <a onclick="resetTimer()">Reset</a>
+                <a class="flag-button" onclick="markInstant()">Flag</a>
+            </div>
+        </div>
+        <div class="timer-container">
+            <div id="timerDisplay" class="timer-display">25:00</div>
+            <div class="timer-buttons">
+                <a href="#" onclick="startPomodoro()">Start</a>
+                <a href="#" onclick="pausePomodoro()">Pause</a>
+                <a href="#" onclick="resetPomodoro()">Reset</a>
+            </div>
+        </div>
+    </div>
+    <div class="row-container">
+        <div class="timer-container">
+            <h1>Timer</h1>
+        </div>
+        <div class="timer-container">
+            <h1>Timer</h1>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

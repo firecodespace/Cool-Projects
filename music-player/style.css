@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 254, 251);
+}
+
+.header-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.head-greeting{
+    border-right: 1px black solid;
+}
+
+.head-greeting:hover{
+    background-color: rgb(200, 234, 255);
+}
+
+.head-greeting h1{
+    font-family: Satoshi-Light;
+    margin: 30px 30px;
+}
+
+.head-heading h1{
+    font-family: Satoshi-Light;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.liked-songs{
+    border-left: 1px black solid;
+}
+
+.liked-songs:hover{
+    background-color: rgb(200, 234, 255);
+    cursor: pointer;
+}
+
+.liked-songs h1{
+    font-family: Satoshi-Light;
+    margin: 30px 30px;
+}
+
+.home-sections{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.home-left-section{
+    flex: 0 1 30%;
+    max-width: 30%;
+    border-right: 1px solid black;
+}
+
+.home-right-section{
+    flex: 1;
+}
+
+.chips-container{
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Style Scrollbar (Optional) */
+.chips-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.chips-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.chips-container::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+.chips-container button{
+    font-size: 1.2em;
+    font-family: Satoshi;
+    text-decoration: none;
+    background-color: rgb(255, 254, 251);
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.chips-container button:hover{
+    background-color: rgb(200, 234, 255);
+    cursor: pointer;
+}
+
+/* style for songs list container */
+
+.song-list-container{
+    display: flex;
+}
+
+.head-song{
+    padding: 5px 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.head-song h2{
+    font-family: Satoshi-light;
+    font-size: 20px;
+    margin: 0;
+}
+
+.song-banner{
+    display: flex;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.song-banner:hover{
+    background-color: rgb(200, 234, 255);
+}
+
+.song-banner img{
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+}
+
+.song-details{
+    display: grid;
+    align-content: space-evenly;
+}
+
+.song-title h3{
+    margin: 0;
+    font-family: Satoshi;
+    font-size: 2em;
+}
+
+.song-artist h4{
+    margin: 0;
+    font-family: Satoshi-Light;
+    font-size: 1.5em;
+}

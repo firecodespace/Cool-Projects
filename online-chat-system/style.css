@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    background-color: grey;
+}
+
+.main-container{
+    display: flex;
+    background-color: rgb(206, 206, 206);
+}
+
+.chat-box-area{
+    background-color: white;
+}

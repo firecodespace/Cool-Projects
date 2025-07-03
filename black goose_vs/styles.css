@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+body{
+    font-family: 'Roboto';
+    background-color: white;
+}
+
+.content{
+    max-width: 900px;
+    margin: auto;
+    background: white;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 200px;
+}
+
+.head_img h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.sub_1 h2{
+    color: grey;
+}
+
+.sub_2 h2{
+    color: grey;
+}
+
+.sub_3 h2{
+    color: grey;
+}
+
+.lnh{
+    line-height: 1.2;
+}
+
+.footer {
+    text-align: center;
+    height: 50px;
+    width: 100%; /* Set the width to 100% to make it full width */
+    position: absolute; /* Position the footer at the bottom of the viewport */
+    bottom: 0; /* Stick it to the bottom */
+    left: 0; /* Stretch it from left edge to right edge */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff; /* Choose your desired button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 6px; /* Add some margin to separate the button from the heading */
+    transition: 60ms;
+}
+
+.button:hover{
+    background-color: #f5faff;
+    border: 1px solid grey;
+    color: #007bff;
+}
+
+@media only screen and (max-width: 700px) {
+    .content{
+        width: 500px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+
+    .head_img h1{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .footer{
+        display: block;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

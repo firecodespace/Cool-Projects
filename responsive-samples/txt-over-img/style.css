@@ -1,0 +1,86 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scroll on small screens */
+}
+
+.main-background {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    overflow: hidden; /* Prevents unwanted scrollbars */
+}
+
+.main-background img {
+    width: 100%;
+    height: 100%; /* Ensure the image covers the full height */
+    object-fit: cover; /* Keeps the image proportionate and covers the container */
+}
+
+.main-background h1 {
+    font-family: "EB Garamond", serif;
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Larger, dynamic font size */
+    font-weight: 600;
+    color: white;
+    line-height: 1.4; /* Adds breathing space between lines */
+    margin-bottom: 20px; /* Space between heading and button */
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; /* Automatically adjust width */
+    white-space: nowrap; /* Prevents wrapping by default */
+    padding: 20px;
+}
+
+@media (max-width: 780px) { /* For small screens, like mobile phones */
+    .content-box {
+        white-space: normal; /* Allow wrapping */
+        text-align: center; /* Aligns text for better readability */
+        max-width: 90%; /* Ensure it fits within the screen width */
+    }
+
+    .main-background h1 {
+        font-size: 2.5rem; /* Adjust font size for better fit */
+        line-height: 1.2;
+    }
+
+    .content-box a {
+        padding: 8px 12px; /* Adjust button padding */
+        font-size: 0.9rem;
+    }
+}
+
+.content-box a {
+    margin-top: 10px; /* Space between the heading and button */
+    padding: 12px 25px; /* Bigger padding for better button aesthetics */
+    background-color: rgb(153, 0, 0);
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Button font size scales dynamically */
+    font-weight: 600;
+    letter-spacing: 0.5px; /* Improves text readability */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds subtle depth to the button */
+}
+
+.content-box a:hover {
+    background-color: rgb(188, 29, 29);
+    transform: translateY(-2px); /* Subtle hover animation */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced hover shadow */
+}

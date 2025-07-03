@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(242, 242, 242);
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 88, 220, 0.733);
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+li{
+    display: inline;
+    float: left;
+}
+
+li.nav-item-about{
+    float: right;
+}
+
+a{
+    display: block;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+a:hover{
+    background-color: #00112bae;
+    text-decoration: none;
+}
+
+.hero-image {
+    /* The image used */
+    background-image: url("/images/henning-witzel-ukvgqriuOgo-unsplash.jpg");
+  
+    /* Full height */
+    height: 100vh; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-one {
+    /* The image used */
+    background-image: url("/images/genevieve-perron-migneron-zV3VPWGmW18-unsplash.jpg");
+  
+    /* Full height */
+    height: 100vh; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-two {
+    /* The image used */
+    background-image: url("/images/jamie-street-MlctHHqC4nk-unsplash.jpg");
+  
+    /* Full height */
+    height: 100vh; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-three {
+    /* The image used */
+    background-image: url("/images/ray-guzman-Nh5kav7oSzg-unsplash.jpg");
+  
+    /* Full height */
+    height: 100vh; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .scroll-down-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .footer{
+    left: 0;
+    bottom: 0;
+    padding: 3px;
+    width: 100%;
+    background-color: #0058dc;
+    color: white;
+    text-align: center;
+  }

@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(250, 250, 250);
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+.clock-container{
+    background-color: white;
+    display: flex;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 22%); /* Apply box shadow */
+
+}
+
+
+.clock {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+    pointer-events: none;
+    user-select: none;
+    padding-right: 8px;
+    font-family: 'Archivo Black';
+    
+}
+
+.date {
+    font-size: 50px;
+    color: #ff2020;
+    pointer-events: none;
+    user-select: none;
+    padding-right: 77px;
+    font-family: 'Archivo Black';
+}
+
+.row-container {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-container {
+    background-color: white;
+    width: 450px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 22%);
+    margin: 20px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Add this line */
+}
+
+.timer-display {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Archivo Black';
+    margin-top: 50px;
+    white-space: nowrap; /* Add this line to prevent line breaks */
+}
+
+.timer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.timer-buttons a {
+    font-size: 1.2em;
+    user-select: none;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background: #0059dc;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+}
+
+.flag-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    max-height: 250px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.flag-list-item {
+    font-size: 1.2em;
+    margin: 5px;
+    text-align: left;
+}

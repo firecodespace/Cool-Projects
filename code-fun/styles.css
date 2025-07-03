@@ -1,0 +1,9 @@
+button {
+    padding: 20px;
+    background: rgb(196, 224, 255);
+    font-family: "Lato", sans-serif;
+    font-size: 18pt;
+    border: 1px solid rgb(0, 106, 226);
+    border-radius: 60px;
+    color: rgb(0, 106, 226);
+  }
